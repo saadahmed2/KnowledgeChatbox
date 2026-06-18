@@ -1,0 +1,448 @@
+2026-06-11T16:53:05 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T16:53:53 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:01:07 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:02:35 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:02:39 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:02:40 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:02:40 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:02:41 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:04:54 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:05:14 | INFO     | app.ingestion.text_splitter | Split 1 raw docs → 3 chunks (size=1000, overlap=200)
+2026-06-11T17:05:33 | INFO     | app.ingestion.text_splitter | Split 1 raw docs → 1 chunks (size=1000, overlap=200)
+2026-06-11T17:08:14 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:09:03 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:10:16 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:13:34 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:13:50 | INFO     | app.retrieval.vector_store | Persisted 31 chunks to chroma store.
+2026-06-11T17:13:50 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmpgw4o3l10.pdf', 'chunks': 31, 'elapsed_s': 16.03}
+2026-06-11T17:14:38 | INFO     | app.chains.rag_chain | RAG chain built with provider=ollama (LCEL)
+2026-06-11T17:25:08 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:25:22 | INFO     | app.retrieval.vector_store | Persisted 31 chunks to chroma store.
+2026-06-11T17:25:22 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmplchhi1v9.pdf', 'chunks': 31, 'elapsed_s': 14.91}
+2026-06-11T17:25:23 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 31 chunks (size=1000, overlap=200)
+2026-06-11T17:25:34 | INFO     | app.retrieval.vector_store | Persisted 31 chunks to chroma store.
+2026-06-11T17:25:34 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmpe1le8_xp.pdf', 'chunks': 31, 'elapsed_s': 10.24}
+2026-06-11T17:25:34 | INFO     | app.ingestion.text_splitter | Split 1 raw docs → 1 chunks (size=1000, overlap=200)
+2026-06-11T17:25:34 | INFO     | app.retrieval.vector_store | Persisted 1 chunks to chroma store.
+2026-06-11T17:25:34 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmprgdooyz7.txt', 'chunks': 1, 'elapsed_s': 0.22}
+2026-06-11T17:41:14 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 49 chunks (size=600, overlap=100)
+2026-06-11T17:41:29 | INFO     | app.retrieval.vector_store | Persisted 49 chunks to chroma store.
+2026-06-11T17:41:29 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmpc_beivm7.pdf', 'chunks': 49, 'elapsed_s': 15.14}
+2026-06-11T17:41:44 | INFO     | app.chains.rag_chain | ChatSession ready provider=ollama model=phi3:latest
+2026-06-11T17:55:43 | INFO     | app.ingestion.pipeline | ▶ Ingestion started — source: D:\KT_DOCUMENTS
+2026-06-11T17:55:44 | INFO     | app.ingestion.document_loader | Found 42 supported files in 'D:\KT_DOCUMENTS'
+2026-06-11T17:56:10 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\ErrorTnp Statement Job in PROD During Month END Debugging Step 1.doc — "There is no item named 'word/document.xml' in the archive"
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 88, in process
+    text += xml2text(zipf.read(doc_xml))
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1510, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1547, in open
+    zinfo = self.getinfo(name)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1476, in getinfo
+    raise KeyError(
+KeyError: "There is no item named 'word/document.xml' in the archive"
+2026-06-11T17:56:10 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\Local Env Setup using Jenkins 1.doc — "There is no item named 'word/document.xml' in the archive"
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 88, in process
+    text += xml2text(zipf.read(doc_xml))
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1510, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1547, in open
+    zinfo = self.getinfo(name)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1476, in getinfo
+    raise KeyError(
+KeyError: "There is no item named 'word/document.xml' in the archive"
+2026-06-11T17:56:10 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\Notification_Flow_Doc.doc — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\ZeroDowntime.doc — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$chnicalDesign_End_Of_Day_ATID_60_New_Design.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$KI_QUERIES_v1.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$ki_Query.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$ntral Logging - LOKI.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$TH_Parameter Description and functionality.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$tification_Flow_Doc.doc — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T17:56:11 | INFO     | app.ingestion.document_loader | Total raw document chunks loaded: 1973
+2026-06-11T17:56:12 | INFO     | app.ingestion.text_splitter | Split 1973 raw docs → 6732 chunks (size=600, overlap=100)
+2026-06-11T19:00:31 | INFO     | app.ingestion.pipeline | ▶ Ingestion started — source: D:\KT_DOCUMENTS
+2026-06-11T19:00:31 | INFO     | app.ingestion.document_loader | Found 42 supported files in 'D:\KT_DOCUMENTS'
+2026-06-11T19:00:58 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\ErrorTnp Statement Job in PROD During Month END Debugging Step 1.doc — "There is no item named 'word/document.xml' in the archive"
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 88, in process
+    text += xml2text(zipf.read(doc_xml))
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1510, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1547, in open
+    zinfo = self.getinfo(name)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1476, in getinfo
+    raise KeyError(
+KeyError: "There is no item named 'word/document.xml' in the archive"
+2026-06-11T19:00:58 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\Local Env Setup using Jenkins 1.doc — "There is no item named 'word/document.xml' in the archive"
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 88, in process
+    text += xml2text(zipf.read(doc_xml))
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1510, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1547, in open
+    zinfo = self.getinfo(name)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1476, in getinfo
+    raise KeyError(
+KeyError: "There is no item named 'word/document.xml' in the archive"
+2026-06-11T19:00:58 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\Notification_Flow_Doc.doc — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\ZeroDowntime.doc — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$chnicalDesign_End_Of_Day_ATID_60_New_Design.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$KI_QUERIES_v1.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$ki_Query.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$ntral Logging - LOKI.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$TH_Parameter Description and functionality.docx — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:00:59 | ERROR    | app.ingestion.document_loader | Failed to load D:\KT_DOCUMENTS\~$tification_Flow_Doc.doc — File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 158, in load_document
+    return loader_fn(path)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\Downloads\SQL Client Test 4\SQL Client Test\knowledge_chatbot\app\ingestion\document_loader.py", line 56, in _load_docx
+    docs = loader.load()
+           ^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 61, in load
+    page_content=docx2txt.process(self.file_path),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\site-packages\docx2txt\docx2txt.py", line 76, in process
+    zipf = zipfile.ZipFile(docx)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\Users\saad.ahmed\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-06-11T19:01:00 | INFO     | app.ingestion.document_loader | Total raw document chunks loaded: 1973
+2026-06-11T19:01:00 | INFO     | app.ingestion.text_splitter | Split 1973 raw docs → 6732 chunks (size=600, overlap=100)
+2026-06-15T15:46:41 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 49 chunks (size=600, overlap=100)
+2026-06-15T15:46:57 | INFO     | app.retrieval.vector_store | Persisted 49 chunks to chroma store.
+2026-06-15T15:46:57 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmpnmmcr2kz.pdf', 'chunks': 49, 'elapsed_s': 15.59}
+2026-06-15T15:47:41 | INFO     | app.chains.rag_chain | ChatSession ready provider=ollama model=phi3:latest
+2026-06-15T16:40:11 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 49 chunks (size=600, overlap=100)
+2026-06-15T16:40:29 | INFO     | app.retrieval.vector_store | Persisted 49 chunks to chroma store.
+2026-06-15T16:40:29 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmpr9ugv7f_.pdf', 'chunks': 49, 'elapsed_s': 18.23}
+2026-06-15T16:40:29 | INFO     | app.ingestion.text_splitter | Split 13 raw docs → 49 chunks (size=600, overlap=100)
+2026-06-15T16:40:40 | INFO     | app.retrieval.vector_store | Persisted 49 chunks to chroma store.
+2026-06-15T16:40:40 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmpjr_4w3tu.pdf', 'chunks': 49, 'elapsed_s': 11.14}
+2026-06-15T16:40:40 | INFO     | app.ingestion.text_splitter | Split 2 raw docs → 4 chunks (size=600, overlap=100)
+2026-06-15T16:40:42 | INFO     | app.retrieval.vector_store | Persisted 4 chunks to chroma store.
+2026-06-15T16:40:42 | INFO     | app.ingestion.pipeline | ✔ File ingestion complete — {'status': 'success', 'file': 'tmp98tfnbbn.pdf', 'chunks': 4, 'elapsed_s': 1.36}

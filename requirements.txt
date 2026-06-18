@@ -1,0 +1,29 @@
+# ── Core framework ─────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9          # file uploads
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+
+# ── LangChain ─────────────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-text-splitters>=0.2.0
+langchain-openai>=0.1.8          # OpenAI + Azure OpenAI
+langchain-ollama>=0.1.1          # Ollama (local models)
+langchain-chroma>=0.1.1          # Chroma vector store
+
+# ── Vector stores ──────────────────────────────────────────────────────────────
+chromadb>=0.5.0                  # persistent vector DB
+faiss-cpu>=1.8.0                 # in-process FAISS (no GPU needed)
+
+# ── Document loaders ──────────────────────────────────────────────────────────
+pymupdf>=1.24.0                  # PDF (PyMuPDFLoader)
+docx2txt>=0.8                    # DOCX
+openpyxl>=3.1.2                  # XLSX
+unstructured[html,pptx]>=0.14.0 # HTML & PPTX
+beautifulsoup4>=4.12.0
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0

@@ -1,0 +1,11 @@
+7.4  Escalation Protocol (Issues 2 & 3)
+Scenario
+Protocol
+In-depth debug 
+required
+Escalate to IPM Development Team with all findings. IPM Dev Team will investigate root cause, prepare 
+the data fix, and participate in the implementation call.
+Night-hours 
+deployment
+Development Support implements the Change Request (CR). CR must be raised by IPM Dev Team and 
+include all scripts and deployment de
